@@ -19,6 +19,8 @@ import { FileType } from '../../typings';
 import { Button } from '../ui/button';
 import { PencilIcon, TrashIcon } from 'lucide-react';
 import { useAppStore } from '../../store/store';
+import { DeleteModal } from '../DeleteModal';
+import RenameModal from '../RenameModal';
 
 export function DataTable({ columns, data }) {
   const table = useReactTable({
@@ -54,6 +56,8 @@ export function DataTable({ columns, data }) {
     <div className="rounded-md border">
       <Table>
         <TableHeader>
+          <DeleteModal/>
+          <RenameModal/>
           {table.getHeaderGroups().map((headerGroup) => (
             <TableRow key={headerGroup.id}>
               {headerGroup.headers.map((header) => {

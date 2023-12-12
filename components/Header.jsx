@@ -4,6 +4,7 @@ import Link from 'next/link'
 import React from 'react'
 
 const Header = () => {
+  
   return (
     <header className="flex items-center justify-between">
        <Link href="/" className="flex items-center space-x-2">
@@ -19,7 +20,8 @@ const Header = () => {
             <h1 className="font-bold text-xl">Dropbox</h1>
         </Link>
        <div className='px-5 flex items-center space-x-2'>
-        
+           
+
         <UserButton afterSignOutUrl='/' />
         <SignedOut>
             <SignInButton afterSignInUrl='/dashboard' mode="modal"/>
