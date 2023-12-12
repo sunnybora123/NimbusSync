@@ -17,7 +17,7 @@ const Header = () => {
                 width={50}
                 /> 
             </div>
-            <h1 className="font-bold text-xl">Dropbox</h1>
+            <h1 className="font-bold text-xl">NimbusSync</h1>
         </Link>
        <div className='px-5 flex items-center space-x-2'>
            
